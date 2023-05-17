@@ -1,0 +1,9 @@
+#Excluyo todos los archivos de entorno
+*.env
+
+# Excluyo todos los módulos de Node.js
+/node_modules
+
+# Excluyo todos los archivos de bloqueo de los módulos de Node.js
+npm-debug.log
+yarn-error.log
