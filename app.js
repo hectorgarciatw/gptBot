@@ -3,8 +3,13 @@
 const express = require('express');
 const path = require('path');
 const morgan = require('morgan');
+const openAI = require('openai');
+
 const app = express();
 const myRouter = require('./routes/myRouter');
+
+// Importamos dotenv para acceder a variables de entorno
+require('dotenv').config();
 
 //Defino el motor de plantillas a utilizar
 app.set('view engine', 'ejs');
